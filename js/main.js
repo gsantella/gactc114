@@ -25,6 +25,6 @@ document.getElementById('btnISS').addEventListener('click', async () => {
     let new_row = x.rows[1].cloneNode(true);
     new_row.cells[0].innerText = json.iss_position.latitude;
     new_row.cells[1].innerText = json.iss_position.longitude;
-    //console.log(new_row);
+    
     x.prepend( new_row );
 })
