@@ -17,6 +17,16 @@
         <li>skill #3</li>
     </ul>
 
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" onchange="document.getElementById('carChoice').innerHTML = document.getElementById('cars').value">
+        <option value="volvo">Volvo</option>
+        <option value="ford">Ford</option>
+        <option value="kia">Kia</option>
+        <option value="audi">Audi</option>
+    </select>
+    
+    <p>You selected:<span id="carChoice"></span></p>
+
     <blockquote>test quote</blockquote>
 
     <img src="https://placecats.com/300/150" alt="Example kitten">
