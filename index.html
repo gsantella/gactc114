@@ -26,7 +26,17 @@
         <span id="dialog-result"></span> 
     </div>
 
-    <dialog id="dialog"> <header>This is a sample dialog</header> <form method="dialog"> <p>What is your favorite pet animal?</p> <menu> <button value="feline">Cats</button> <button value="canine">Dogs</button> <button value="other">Others</button> </menu> </form> </dialog>
+    <dialog id="dialog"> 
+        <header>This is a sample dialog</header> 
+        <form method="dialog"> 
+            <p>What is your favorite pet animal?</p> 
+            <menu> 
+                <button value="feline" onclick="alert('you like cats')">Cats</button> 
+                <button value="canine" onclick="alert('you like dogs')">Dogs</button> 
+                <button value="other">Others</button> 
+            </menu> 
+        </form> 
+    </dialog>
 
     <label>Temp in Fahrenheight</label><input type="number" id="fTemp">
     <label>Temp in Celsius</label><input type="number" id="cTemp">
