@@ -15,7 +15,7 @@ document.getElementById('btnConvert').addEventListener('click', () => {
 })
 
 document.getElementById('btnISS').addEventListener('click', async () => {
-    const apiUrl = 'http://api.open-notify.org/iss-now.json'
+    const apiUrl = 'https://api.wheretheiss.at/v1/satellites/25544'
     
     const response = await fetch(apiUrl);
     const json = await response.json();
@@ -23,8 +23,8 @@ document.getElementById('btnISS').addEventListener('click', async () => {
     // add row to table
     const x = document.getElementById('tblISS');
     let new_row = x.rows[1].cloneNode(true);
-    new_row.cells[0].innerText = json.iss_position.latitude;
-    new_row.cells[1].innerText = json.iss_position.longitude;
+    new_row.cells[0].innerText = json.latitude;
+    new_row.cells[1].innerText = json.longitude;
     
     x.prepend( new_row );
 })
